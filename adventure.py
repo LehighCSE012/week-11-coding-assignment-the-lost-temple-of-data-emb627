@@ -42,7 +42,7 @@ def extract_journal_dates(journal_text):
     Returns:
         list[str]: A list of date strings found in the text.
     """
-    dates_list = re.findall(r"(0[1-9] | 10 | 11| 12)\/\d{2}\/\d{4}", journal_text)
+    dates_list = re.findall(r"(0[1-9]|10|11|12)\/\d{2}\/\d{4}", journal_text)
     return dates_list
     #Finds all dates that follow the specified pattern in the journal_text file
     #Returns the string of these dates or an empty string if none match the pattern
